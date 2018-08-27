@@ -17,8 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="java.com.example.softheart.englishnumbers.ControlerActivity"></activity>
-        <activity android:name="java.com.example.softheart.englishnumbers.SongsActivity"></activity>
+        <activity android:name="java.com.example.softheart.englishnumbers.ControlerActivity"
+            android:parentActivityName="java.com.example.softheart.englishnumbers.SongsActivity"
+            ></activity>
+        <activity android:name="java.com.example.softheart.englishnumbers.SongsActivity">
+        </activity>
     </application>
 
 </manifest>
