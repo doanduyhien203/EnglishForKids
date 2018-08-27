@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ControlerActivity">
+    <ImageView android:id="@+id/image_controler"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/controller" />
+
+    <ImageButton
+        android:id="@+id/play_ib"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/image_controler"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/play" />
+    <TextView android:id="@+id/congrats_tv"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:text="Congrats you learnt zero"
+        android:layout_below="@id/play_ib"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</layout>
